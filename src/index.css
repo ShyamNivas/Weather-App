@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Black+Ops+One&family=Borel&family=Outfit:wght@300&family=Tilt+Prism&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Outfit', 'sans-serif', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p{
+  font-size: 1.6rem;
+}
+
+h1{
+  font-size: 6rem;
+}
+
+.app{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+}
+
+.app:before{
+  content: '';
+  background: url('./assests/noaa-J4RIaAU8s2o-unsplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+
+
+.container{
+  max-width: 700px;
+  height: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app .top{
+  width: 100%;
+  margin: 5rem auto;
+}
+
+.app .desc{
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(269deg)
+}
+
+.app .bottom{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 8rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.app .search{
+  text-align: center;
+  padding-top: 3rem;
+}
+.app input{
+  padding: .7rem 1.5rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255,0.8);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff; 
+}
+
+::placeholder{
+  color: #fff;
+  opacity: 0.9;
+} 
+
+::selection{
+  color:#191970;
+  background-color:rgba(255,255,255,0.7);
+}
+
+input:hover {
+  font-size: 20px;
+}
+
+
